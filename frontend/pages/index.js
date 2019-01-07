@@ -3,7 +3,7 @@ import Link from "next/link";
 const Home = props => (
   <div>
     <p>Home!!</p>
-    <Link href="/Sell">Sell !!</Link>
+    <Link href="/sell">Sell !!</Link>
   </div>
 );
 
