@@ -1,13 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
 
-class Page extends React.Component {
+import Header from "./Header";
+import Nav from "./Nav";
+import Meta from "./Meta";
+
+class Page extends Component {
   render() {
     return (
       <div>
-        <nav>
-          <a href="_">Menu</a>
-        </nav>
-        {this.props.children}
+        <Meta />
+        <Header />
+        <Nav />
       </div>
     );
   }
