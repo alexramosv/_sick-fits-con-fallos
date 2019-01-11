@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Home = props => (
   <div>
-    <h1>Home!!</h1>
+    <h2>Home!!</h2>
   </div>
 );
 
