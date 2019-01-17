@@ -6,7 +6,11 @@
     "start": "nodemon -e js,graphql -x node src/index.js",
     "dev": "nodemon -e js,graphql -x node --inspect src/index.js",
     "test": "jest",
+    "unfrak": "rm -rf node_modules && rm package-lock.json && npm install",
     "deploy": "prisma deploy --env-file variables.env"
+  },
+  "resolutions": {
+    "graphql": "^0.13.1"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
@@ -20,7 +24,7 @@
     "nodemailer": "^4.6.8",
     "nodemon": "^1.18.7",
     "npm-run-all": "^4.1.5",
-    "prisma": "^1.23.4",
+    "prisma": "^1.24.0",
     "prisma-binding": "2.1.6",
     "stripe": "^6.12.1"
   },
